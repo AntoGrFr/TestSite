@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="login.css" />
+        <title>Formulaire Js</title>
+        <link rel = "icon" href = "LogCS.png" type = "image/x-icon">
+    </head>
+    <body>
+        <header>
+            <div id="Titre">
+                <div id="logo">
+                    <img src="LogCS.png">
+                    <h1>Test TP</h1>
+                </div>
+                <h2>Formulaire Js</h2>
+            </div>
+        </header>
+        <div class="container">
+            <div class="card">
+                <a class="login">Log in</a>
+                <div class="inputBox">
+                    <input type="text" id="user" required="required">
+                    <span class="user">Username</span>
+                </div>
+                <div class="inputBox">
+                    <input type="password" id="password" required="required">
+                    <span>Password</span>
+                </div>
+                <button class="enter" onclick="login()">Enter</button>
+            </div>
+            <p id="wronglog"></p>
+            <script>
+                function login() {
+                    var user = document.getElementById("user").value;
+                    var password = document.getElementById("password").value;
+                    if (user == "antoine.greil") {
+                        if (password == "2101275") {
+                            document.location.href="accueil.html";;
+                        }
+                    } else {
+                        document.getElementById("wronglog").innerHTML = "<I>Wrong username/password</I>";
+                    }
+                }
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Style-site.css" />
+        <title>Formulaire Js</title>
+        <link rel = "icon" href = "LogCS.png" type = "image/x-icon">
+    </head>
+    <body>
+        <header>
+            <div id="Titre">
+                <div id="logo">
+                    <img src="LogCS.png">
+                    <h1>Test TP</h1>
+                </div>
+                <h2>Formulaire Js</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="accueil.html" class="accueil">accueil</a></li>
+                    <li><a href="info.html" class="info">info</a></li>
+                    <li><a href="contact.html" class="contact">contact</a></li>
+                    <div class="toggle-switch">
+                        <label class="switch-label">
+                          <input type="checkbox" class="checkbox" onclick="dark_mode()">
+                          <span class="slider"></span>
+                        </label>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <div id="Identifiants">
+            <article id="Nouveau">
+                <h2>Formulaire d'ajout et de retrait des participants</h2>
+                <label for="name">Name (4 to 8 characters):</label>
+                <input type="text" id="name" name="name" required 
+                minlength="4" maxlength="8" size="10">
+                <label for="surname">Surname (4 to 8 characters):</label>
+                <input type="text" id="surname" name="surname" required 
+                minlength="4" maxlength="8" size="10">
+                <label for="Id">Id:</label>
+                <input type="text" id="Id" name="Id" required 
+                minlength="4" maxlength="8" size="10"><br>
+                <input type="button" onclick="new_profile()" value=" add new">
+                <input type="button" onclick="delete_profile()" value=" delete"><br>
+                <h3 id="Error"></h3>
+                <canvas id="graph"></canvas>
+            </article>
+            <aside>
+                <h2>Liste des participants :</h2>
+                <p id="liste"></p>
+            </aside>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+        <script src="Formulaire.js"></script>
+    </body>
+</html>

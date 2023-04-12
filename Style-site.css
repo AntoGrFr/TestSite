@@ -1,0 +1,262 @@
+body
+{
+    background-color: #303030;
+    font-family: sans-serif;
+    color: grey;
+}
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+
+article
+{
+    float: left;
+}
+
+
+#Error
+{
+    color: red;
+}
+
+aside
+{
+    float: right;
+    width: 280px;
+    height: 460px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: grey;
+    border-radius: 10px;
+    color: blueviolet;
+    opacity: 0.8;
+    padding-left: 5px;
+}
+
+#Identifiants
+{
+    margin-left: 10px;
+}
+
+
+/* header */
+
+header
+{
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: black;
+    border-radius: 15px;
+}
+
+#titre
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 90px;
+    height: 55px;
+    border-radius: 15px 0px 0px 0px;
+}
+
+header h1
+{
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+    text-transform: uppercase;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header h2
+{
+    font-size: 1.1em;
+    font-weight: normal;
+    margin-top: 0px;
+}
+
+/* nav */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    padding-right: 15px;
+}
+
+nav li
+{
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+.info
+{
+    height: 40px;
+    background-color: lightgrey;
+    border: 0px;
+    font-size: 1.4em;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    border-radius: 8px 8px 0px 0px;
+    text-align: center;
+    color: gray;
+    text-decoration: none;
+}
+
+.info:hover
+{
+    height: 40px;
+    background-color: grey;
+    border: 0px;
+    font-size: 1.4em;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    border-radius: 8px 8px 0px 0px;
+    text-align: center;
+    color: lightgrey;
+    text-decoration: none;
+}
+
+.accueil
+{
+    height: 40px;
+    background-color: lightgrey;
+    border: 0px;
+    font-size: 1.4em;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    border-radius: 8px 8px 0px 0px;
+    text-align: center;
+    color: gray;
+    text-decoration: none;
+}
+
+.accueil:hover
+{
+    height: 40px;
+    background-color: grey;
+    border: 0px;
+    font-size: 1.4em;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    border-radius: 8px 8px 0px 0px;
+    text-align: center;
+    color: lightgrey;
+    text-decoration: none;
+}
+
+.contact
+{
+    height: 40px;
+    background-color: lightgrey;
+    border: 0px;
+    font-size: 1.4em;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    border-radius: 8px 8px 0px 0px;
+    text-align: center;
+    color: gray;
+    text-decoration: none;
+}
+
+.contact:hover
+{
+    height: 40px;
+    background-color: grey;
+    border: 0px;
+    font-size: 1.4em;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    border-radius: 8px 8px 0px 0px;
+    text-align: center;
+    color: lightgrey;
+    text-decoration: none;
+}
+
+
+.toggle-switch {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    --light: lightgrey;
+    --dark: #303030;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+    
+  }
+  
+  .switch-label {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: var(--dark);
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid var(--dark);
+  }
+  
+  .checkbox {
+    
+    position: absolute;
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .checkbox:checked ~ .slider {
+    background-color: var(--light);
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 5px -2px 0px 0px var(--light);
+    box-shadow: inset 5px -2px 0px 0px var(--light);
+    background-color: var(--dark);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .checkbox:checked ~ .slider::before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+    background-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
